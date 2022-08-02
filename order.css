@@ -1,0 +1,182 @@
+@import url('https://fonts.googleapis.com/css2?family=Outfit&display=swap');
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+html{
+    font-family: 'Outfit', sans-serif;
+}
+
+h1{
+    font-size: 22px;
+    font-weight: 700;
+}
+
+h3{
+    font-size: 15px;
+    font-weight: 600;
+    color: hsl(0, 0%, 0%);
+}
+
+p{
+    font-size: 13px;
+    font-weight: 400;
+    color:hsl(0, 0%, 0%) ;
+}
+.color{
+    color: hsl(224, 23%, 55%) !important;
+}
+span{
+    color:  hsl(245, 75%, 52%);
+    text-decoration: underline;
+    font-size: 15px;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+body{
+    background-color: #E0E8FF;
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    padding: 60px 15px;
+    color: rgb(0, 0, 0);
+}
+.summary > small{
+    color: hsl(224, 23%, 55%);
+    font-size: 15px;
+    font-weight: 600;
+}
+.summary > small:hover{
+    cursor: pointer;
+    color: black;
+}
+main span:hover{
+    color: hsl(224, 23%, 55%);
+}
+header{
+    height: 600px;
+    width: 100%;
+    background-image:url('./images/pattern-background-desktop.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: absolute;
+    top: -200px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 15px;
+    color: white;
+    
+}
+
+main{
+    height: 600px;
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    border-radius: 15px;
+    overflow: hidden;
+    z-index: 1;
+    
+}
+
+main .image{
+    height: 35%;
+    width: 100%;
+    background-image: url('./images/illustration-hero.svg');
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+}
+main .summary{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+    gap: 25px;
+    height: 70%;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: white;
+}
+
+main .price{
+    display: flex;
+    width: 100%;
+    height: auto;
+    justify-content: space-between;
+    align-items: center;
+    padding:10px ;
+    flex-wrap: wrap;
+    gap: 30px;
+    background-color: hsl(229, 65%, 97%);
+    border-radius: 10px;
+    
+}
+main button{
+    width: 100%;
+    height: 40px;
+    background-color:  hsl(245, 75%, 52%);
+    text-align: center;
+    color: white;
+    border-radius: 10px;
+    border: none;
+    cursor: pointer;
+    box-shadow: rgba(15, 13, 155, 0.4) 0px 20px 25px -5px, rgba(21, 58, 179, 0.4) 0px 10px 10px -5px;
+}
+main button:hover{
+    background-color: hsl(224, 23%, 55%);
+  
+}
+
+main .year{
+    display: flex;
+    gap: 10px;
+}
+main .year i{
+    padding: 10px;
+    border-radius: 50%;
+    background-color:hsl(225, 100%, 94%);
+}
+
+
+
+
+
+@media screen and (max-width: 375px) {
+
+    
+    body{
+      
+        padding: 60px 10px;
+      
+    }
+
+
+    header{
+        height: 600px;
+        width: 100%;
+        position: absolute;
+        top: -200px;
+       
+       
+    }
+    
+    main{
+        height: 600px;
+        width: 90%;
+    
+    }
+
+    main .summary{
+        padding: 10px;
+       
+    }
+}
